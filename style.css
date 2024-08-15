@@ -1,0 +1,91 @@
+body {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    color: brown;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#flex-container, #item-container,
+#items, .item, .score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.score-container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.score {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+}
+
+#item-container {
+    gap: 10px;
+    flex-direction: column;
+}
+
+#items {
+    flex-direction: row;
+}
+
+.item {
+    gap: 10px;
+}
+
+img {
+    width: 250px;
+    height: 200px;
+}
+
+button:focus {
+    border-color: blue;
+}
+
+#play-btn, .btn {
+    padding: 3px 20px;
+    font-weight: bold;
+}
+
+#play-btn {
+    color: white;
+    background-color: brown;
+}
+
+#display-win, #display-items,
+#btns {
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    justify-content: space-between;
+}
+
+#display-win {
+    display: none;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#btns {
+    justify-content: space-around;
+}
+
+#start-over {
+    color: white;
+    background-color: brown;
+}

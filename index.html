@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock-Paper-Scissors</title>
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="./script.js"></script>
 </head>
 <body>
-    
+    <div id="header">Rock, Paper, Scissors Game</div>
+    <hr size="0.1px" >
+    <div id="flex-container">
+        <div class="score-container">
+            <div id="player-score" class="score">
+                <p>Player Score</p>
+                <div class="score-holder">0</div>   
+            </div>
+            <div id="computer-score" class="score">
+                <p>Computer Score</p>
+                <div class="score-holder">0</div>
+            </div>
+
+        </div>
+        <div id="item-container">
+            <p>Choose One:</p>
+            <div id="items">
+                <div class="item" id="rock">
+                    <button><img src="./img/rock.png" alt=""></button>
+                    <p>Rock</p>
+                </div>
+                <div class="item" id="paper">
+                    <button><img src="./img/paper.png" alt=""></button>
+                    <p>Paper</p>
+                </div>
+                <div class="item" id="scissor">
+                    <button><img src="./img/scissors.png" alt=""></button>
+                    <p>Scissors</p>
+                </div>
+            </div>
+            <button id="play-btn">Play</button>
+        </div>
+        <div id="display-win">
+            <div id="display-items">
+                <div class="item" id="player">
+                    <p>Player</p>
+                </div>
+                <div class="item" id="computer">
+                    <p>Computer</p>
+                </div>        
+            </div>
+            <div id="btns">
+                <button id="new-game" class="btn">New Game</button>
+                <button id="start-over" class="btn">Start Over</button>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
